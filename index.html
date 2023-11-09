@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>PrincesaTrivia</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img
+                    src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/corona-removebg-preview.png?v=1699399589918" /></a>
+        </nav>
+    </header>
+
+    <section class="inicio">
+        <div class="contenido-inicio">
+            <h1 class="titulo">Bienvenidas a nuestra trivia!</h1>
+            <img src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/Princess-Map.jpg?v=1699314856239"
+                class="imagen-inicio" alt="Mapa de Princesas" />
+            <div class="contenido-ingreso">
+                <p class="instruccion">
+                    Tienes 5 preguntas para poner a prueba tus conocimientos, solo selecciona el tema de tu preferencia
+                    y a jugar!
+                    <span class="span-instruccion">Mucha suerte!</span>
+                </p>
+
+                <!--Ingreso de datos-->
+                <div class="cont-ingreso-datos">
+                    <div class="cont-nombre">
+                        <h3><label for="nombre">Ingresa tu nombre</label></h3>
+                        <input type="text" name="nombre" id="inputNombre" />
+                    </div>
+
+
+                    <div class="cont-btn">
+                        <h3>¿Países o Princesas?</h3>
+                        <select class="select" id="seleccionTrivia">
+                            <option value="" selected disabled>Selecciona una opcion</option>
+                            <option value="Paises">Paises</option>
+                            <option value="Princesas">Princesas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="btn-responder" id="mostrarMensajeButton">Empezar a Jugar</button>
+                <!--<p id="mensaje"></p>-->
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <h4>Princesa Trivia 2023 - Todos los Derechos Reservados</h4>
+    </footer>
+
+</body>
+
+</html>

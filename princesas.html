@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Trivia Princesas</title>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img
+                    src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/corona-removebg-preview.png?v=1699399589918" /></a>
+        </nav>
+    </header>
+
+    <div class="mensaje-nombre">
+        <p id="mensaje"></p>
+    </div>
+
+    <section>
+        <form id="formPrincesas">
+            <!--pregunta 1-->
+            <div class="preguntaPrincesa">
+                <div>
+                    <h2 class="titulo-pregunta">1. ¿Cuantas hermanas tiene la princesa Sirenita?</h2>
+                </div>
+                <div class="contenido-pregunta">
+                    <img src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/la-sirenita.jpg?v=1699381742711"
+                        class="imagen-pregunta" alt="Sirenita" />
+                    <div class="radio-contenedor pregunta-1">
+                        <input class="custom-radio inputOpcion" type="radio" name="pregPrincesas1" value="cinco" />
+                        <label for="cinco">Cinco</label><br>
+
+                        <input class="custom-radio inputOpcion" type="radio" name="pregPrincesas1" value="seis" />
+                        <label for="seis">Seis</label><br>
+
+                        <input class="custom-radio inputOpcion" type="radio" name="pregPrincesas1" value="cuatro" />
+                        <label for="cuatro">Cuatro</label><br>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--pregunta 2-->
+            <div class="preguntaPrincesa">
+                <div>
+                    <h2 class="titulo-pregunta">2. ¿Que nombre usa la princesa Aurora cuando vive oculta en el bosque?
+                    </h2>
+                </div>
+                <div class="contenido-pregunta">
+                    <img src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/bella%20durmiente.jpeg?v=1699380829486"
+                        class="imagen-pregunta" alt="Princesa Aurora" />
+
+                    <div class="radio-contenedor">
+                        <input class="custom-radio" type="radio" name="pregPrincesas2" value="rosa" />
+                        <label for="rosa">Rosa</label><br>
+
+                        <input class="custom-radio" type="radio" name="pregPrincesas2" value="hortensia" />
+                        <label for="hortensia">Hortensia</label><br>
+
+                        <input class="custom-radio" type="radio" name="pregPrincesas2" value="margarita" />
+                        <label for="margarita">Margarita</label><br>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--pregunta 3-->
+            <div class="preguntaPrincesa">
+                <div>
+                    <h2 class="titulo-pregunta">3. ¿Cual es el verdadero nombre de Flynn Ryder en Rapunzel? </h2>
+                </div>
+                <div class="contenido-pregunta">
+                    <img src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/rapunzel_flynn.jpg?v=1699382524700"
+                        class="imagen-pregunta" alt="Rapunzel" />
+
+                    <div class="radio-contenedor">
+                        <input class="custom-radio" type="radio" name="pregPrincesas3" value="ferdinand" />
+                        <label for="ferdinand">Ferdinand</label><br>
+
+                        <input class="custom-radio" type="radio" name="pregPrincesas3" value="albert" />
+                        <label for="albert">Albert</label><br>
+
+                        <input class="custom-radio" type="radio" name="pregPrincesas3" value="eugene" />
+                        <label for="eugene">Eugene</label><br>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <div class="btn-responder">
+        <button class="btn-responder" id="respPrincesasBtn" onclick="respuestasPrincesas()">Responder y ver
+            Resultados</button>
+    </div>
+
+
+
+    <div>
+        <p id="msjPuntajePrincesa"></p>
+        <button id="volverJugarBtn" onclick="reiniciarTrivia()">Volver a jugar</button>
+    </div>
+
+
+    <footer class="footer">
+        <h4>Princesa Trivia 2023 - Todos los Derechos Reservados</h4>
+    </footer>
+</body>
+
+</html>

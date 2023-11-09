@@ -1,0 +1,262 @@
+/* CSS variables */
+:root {
+    --color-bg: #f2e4f9;
+    --color-titulo: #E64996;
+    --color-primario: #FE95CD;
+    /*rosado*/
+    --color-secundario: #89c9e3;
+    /*celeste*/
+    --color-terciario: #839cb5;
+    /*gris*/
+    --color-hover: #FEC4ED;
+    --color-claro: #FDFEFE;
+    /*blanco*/
+}
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body {
+    background-color: var(--color-bg);
+}
+
+
+/* Header */
+header {
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-claro);
+    font-size: 18px;
+}
+
+nav img {
+    width: 100px;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0 0.75rem 0;
+    width: 100%;
+    color: var(--color-terciario);
+    border-top: 2px solid var(--color-titulo);
+}
+
+
+/*Inicio*/
+.contenido-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Titulo principal */
+.titulo {
+    color: var(--color-titulo);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 110%;
+    margin: 70px auto;
+}
+
+.imagen-inicio {
+    max-width: 100%;
+    max-height: 530px;
+    margin-top: -30px;
+}
+
+/* Ingreso */
+.contenido-ingreso {
+    margin: 4rem;
+    text-align: center;
+}
+
+.instruccion {
+    font-size: 27px;
+    padding: 0 150px;
+    margin: 0 auto;
+}
+
+.span-instruccion {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.cont-ingreso-datos h3,
+.cont-btn {
+    margin: 30px auto;
+}
+
+.cont-ingreso-datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 150px;
+    margin: 0 auto;
+}
+
+.cont-nombre,
+.cont-btn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+button {
+    font-family: inherit;
+    font-size: 100%;
+    background: var(--color-primario);
+    border: 0px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: 500ms;
+}
+
+.cont-ingreso-datos input,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    background: var(--color-secundario);
+    border: 0px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: 500ms;
+}
+
+button:hover,
+.cont-ingreso-datos input:hover,
+.cont-ingreso-datos select:hover {
+    background: var(--color-hover);
+}
+
+
+/* Mensaje Saludo*/
+
+.mensaje-nombre {
+    text-align: center;
+    padding: 0 200px 60px 200px;
+    margin: 80px auto;
+    border-bottom: 2px solid var(--color-titulo);
+}
+
+.mensaje-nombre p {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-terciario);
+}
+
+
+/*CSS Preguntas*/
+
+.pregunta,
+.preguntaPrincesa {
+    margin: 6em 10em;
+}
+
+.titulo-pregunta {
+    color: var(--color-titulo);
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.contenido-pregunta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+.imagen-pregunta {
+    width: 380px;
+    height: 250px;
+    margin: 2em;
+    border-radius: 5%;
+}
+
+/*CSS Radio Buttons*/
+
+.radio-contenedor {
+    /*display: flex;*/
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-contenedor label {
+    font-size: 23px;
+    padding-left: 10px;
+}
+
+.custom-radio {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-primario);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Radio button cuando está marcado */
+.custom-radio:checked {
+    background-color: var(--color-primario);
+}
+
+
+/*Botón Enviar respuestas*/
+.btn-responder {
+    margin: 0 auto;
+    display: flex;
+    font-size: 1.2em;
+    color: #F7F9F9;
+}
+
+
+#volverJugarBtn {
+    display: none;
+    margin: 1em auto 3em;
+    font-size: 1.2em;
+    color: #F7F9F9;
+}
+
+#msjPuntajePrincesa {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-titulo);
+    padding: 2em;
+}
+
+#msjPuntajePaises {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-titulo);
+    padding: 2em;
+}
+
+.resp-correcta:checked{
+    background-color: chartreuse;
+}
+
+.resp-incorrecta:checked{
+    background-color:crimson;
+}
