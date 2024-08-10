@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <title>Trivia Países</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <script src="/script.js" defer></script>
+    <script defer src="./assets/js/script.js"></script>
 </head>
-
 <body>
     <header>
         <nav>
@@ -20,13 +18,10 @@
                     src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/corona-removebg-preview.png?v=1699399589918" /></a>
         </nav>
     </header>
-
     <section>
         <div class="mensaje-nombre">
             <p id="mensaje"></p>
         </div>
-
-
         <!--pregunta 1-->
         <div class="pregunta">
             <div>
@@ -35,21 +30,16 @@
             <div class="contenido-pregunta">
                 <img src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/Frozen.jpg?v=1699381514761"
                     class="imagen-pregunta" alt="Rapunzel" />
-
                 <div class="radio-contenedor">
                     <input class="custom-radio" type="radio" name="pregPaises1" value="Islandia" />
                     <label for="Islandia">Islandia</label><br>
-
                     <input class="custom-radio" type="radio" name="pregPaises1" value="Noruega" />
                     <label for="Noruega">Noruega</label><br>
-
                     <input class="custom-radio" type="radio" name="pregPaises1" value="Escocia" />
                     <label for="Escocia">Escocia</label><br>
                 </div>
             </div>
         </div>
-
-
         <!--pregunta 2-->
         <div class="pregunta">
             <div>
@@ -58,22 +48,16 @@
             <div class="contenido-pregunta">
                 <img src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/Motunui.webp?v=1699397291543"
                     class="imagen-pregunta" alt="Bandera Canada" />
-
                 <div class="radio-contenedor">
                     <input class="custom-radio" type="radio" name="pregPaises2" value="Ariel" />
                     <label for="Ariel">Ariel</label><br>
-
                     <input class="custom-radio" type="radio" name="pregPaises2" value="Anastasia" />
                     <label for="Anastasia">Anastasia</label><br>
-
                     <input class="custom-radio" type="radio" name="pregPaises2" value="Moana" />
                     <label for="Moana">Moana</label><br>
-
                 </div>
             </div>
         </div>
-
-
         <!--pregunta 3-->
         <div class="pregunta">
             <div>
@@ -82,38 +66,26 @@
             <div class="contenido-pregunta">
                 <img src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/blancanieves.webp?v=1699397421424"
                     class="imagen-pregunta" alt="Bandera Canada" />
-
                 <div class="radio-contenedor">
                     <input class="custom-radio" type="radio" name="pregPaises3" value="Alemania" />
                     <label for="Alemania">Alemania</label><br>
-
                     <input class="custom-radio" type="radio" name="pregPaises3" value="Noruega" />
                     <label for="Noruega">Noruega</label><br>
-
                     <input class="custom-radio" type="radio" name="pregPaises3" value="Francia" />
                     <label for="Francia">Francia</label><br>
-
                 </div>
             </div>
         </div>
     </section>
-
     <div class="btn-responder">
-        <button class="btn-responder" id="respPaisesBtn" onclick="respuestasPaises()">Responder y ver
-            Resultados</button>
+        <button class="btn-responder" id="respPaisesBtn" onclick="respuestasPaises()">Responder y ver Resultados</button>
     </div>
-
     <div>
         <p id="msjPuntajePaises"></p>
         <button id="volverJugarBtn" onclick="reiniciarTrivia()">Volver a jugar</button>
     </div>
-
-
     <footer class="footer">
         <h4>Princesa Trivia 2023 - Todos los Derechos Reservados</h4>
     </footer>
-
-
 </body>
-
 </html>

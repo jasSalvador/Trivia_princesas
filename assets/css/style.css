@@ -21,11 +21,9 @@
     font-family: 'Nunito', sans-serif;
 }
 
-
 body {
     background-color: var(--color-bg);
 }
-
 
 /* Header */
 header {
@@ -70,7 +68,7 @@ nav img {
     color: var(--color-titulo);
     font-style: normal;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 4rem;
     line-height: 110%;
     margin: 70px auto;
 }
